@@ -1,0 +1,53 @@
+@import 'variable.less';
+/* 定制element样式 */
+.el-table__fixed-header-wrapper,.el-table__header-wrapper{
+    .el-table__header{
+        th.el-table__cell {
+            background-color: @grey-4;
+        }
+    } 
+}
+.el-drawer__header{
+    margin-bottom: 20px;
+    span{
+        font-size: 18px;
+        font-weight: 700
+    }
+}
+.el-loading-spinner{
+    top: 20% !important
+}
+
+.el-loading-mask{
+    z-index: 9999 !important;
+}
+.el-date-editor{
+    .el-range-separator{
+        width: 10%;
+    }
+}
+.el-dialog--center,.el-dialog{
+    .el-dialog__body{
+        padding: 10px 30px !important
+    }
+    .el-dialog__header{
+        // 不要写成padding，会覆盖控件中的左右padding，控件中的css未做自适应转换，会造成与下边元素对不齐
+        padding-top: 20px;
+        padding-bottom: 10px
+    }
+    .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+        background-color: @blue-2;
+        color: #fff;
+    }
+    .el-tree-node__content{
+        .el-tooltip{
+            font-size: 14px
+        }
+    }
+}
+
+// 40px的行高会导致搜索区样式问题
+.el-form-item__content {
+    line-height: 38px;
+}
+

@@ -1,0 +1,15 @@
+{
+    "courceSource": {
+        "query": "/courceSource/list",
+        "deleteItem": "/courceSource/delete",
+        "create": "/courceSource/add",
+        "edit": "/courceSource/update",
+        "export": "/courceSource/export"
+      },
+      "courcePublic": {
+        "query": "/courcePublic/list",
+        "deleteItem": "/courcePublic/delete",
+        "create": "/courcePublic/add",
+        "edit": "/courcePublic/update"
+      }
+}
